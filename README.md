@@ -9,7 +9,7 @@ docker run -d --name fxwatch --restart unless-stopped --stop-timeout 90 \
   -p 8099:8099 -v fxwatch-data:/data chirophy/fxwatch:1.3.0
 ```
 
-打开 **http://服务器IP:8099**。只需 Docker，无需单独安装 Python、手动创建网络或准备配置文件。需要外部访问时，在服务器网络和云安全组中允许 TCP 8099。
+打开 **http://服务器IP:8099** 。只需 Docker，无需单独安装 Python、手动创建网络或准备配置文件。需要外部访问时，在服务器网络和云安全组中允许 TCP 8099。
 
 首次启动会在数据卷中生成 `/data/config.toml` 和 SQLite 数据库，后续重建容器保留数据。默认以 UID/GID 10001 运行；命名卷会准备相应目录权限。不要删除 `fxwatch-data`。
 
