@@ -1,0 +1,10 @@
+# Only application code and the public container defaults enter the build context.
+**
+!Dockerfile
+!requirements-docker.txt
+!fxwatch/
+!fxwatch/**
+!deploy/
+!deploy/config.docker.toml
+**/__pycache__/
+**/*.pyc

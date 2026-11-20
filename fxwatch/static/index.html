@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>汇率观察 · 银行购汇比较</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css"><script defer src="/app.js"></script></head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="/" aria-label="汇率观察首页"><span class="brand-icon">↗</span><span>汇率观察<small>FX WATCH</small></span></a>
+  <div class="nav-label">我的看板</div><a class="nav-item active" href="#overview"><span>▦</span> 汇率总览 <span class="nav-arrow">↗</span></a><a class="nav-item" href="#comparison"><span>⇄</span> 银行比较</a><a class="nav-item" href="#history"><span>⌁</span> 历史走势</a>
+  <div class="sidebar-bottom"><div class="source-mark"><i></i> 银行官网直连</div><p>每一笔报价，都有出处。<br>用同一种口径，比较购汇成本。</p><div class="sidebar-note">人民币 / 1 单位外币<br>北京时间 · UTC+8</div></div>
+</aside>
+<main>
+  <header class="topbar"><span>个人金融工具 <span class="slash">/</span> <b>购汇监测</b></span><span id="today">北京时间</span></header>
+  <section class="heading" id="overview"><div><div class="eyebrow">YOUR EXCHANGE, IN FOCUS</div><h1>好汇率，一眼有数<span>。</span></h1><p>直接比较银行现汇卖出价，找到当前有效样本中的更低报价。</p></div><div class="heading-actions"><span class="live-pill" id="connection"><i></i> 正在连接</span><button class="button" id="refresh" type="button"><span aria-hidden="true">↻</span> 刷新数据</button></div></section>
+  <div class="notice hidden" id="notice" role="status"></div>
+  <div class="meta-line"><span id="collection-time">正在读取采集状态…</span><span id="cadence">网页每 30 秒更新 · 正在读取采集频率</span></div>
+  <section class="currency-grid" id="currency-cards" aria-label="选择比较币种"><div class="loading-card">正在加载四个币种的官方报价…</div></section>
+  <section class="workspace-grid" id="comparison">
+    <article class="panel comparison-panel"><div class="panel-heading"><div><div class="eyebrow">BANK COMPARISON</div><h2><span id="currency-title">美元</span>购汇比较 <span class="code-label" id="currency-code">USD</span></h2></div><span class="subtle" id="coverage">等待数据</span></div>
+      <div class="comparison-toolbar"><span>有效报价从低到高排列</span><label>购入 <input id="amount" type="number" inputmode="decimal" min="0.01" max="100000000" step="0.01" value="10000" aria-label="计划购入外币金额"> <b id="amount-currency">USD</b></label></div>
+      <p class="input-error hidden" id="amount-error" role="status">请输入 0.01 到 100,000,000 之间的金额，最多两位小数。</p>
+      <div class="table-scroll"><table><thead><tr><th>银行</th><th>现汇卖出价 <small>CNY / 1 外币</small></th><th>预计人民币</th><th>银行报价时间</th><th>状态</th></tr></thead><tbody id="bank-rows"><tr><td colspan="5" class="empty-cell">报价加载中…</td></tr></tbody></table></div>
+      <div class="table-footer"><span><i class="tiny-dot"></i> 过期、失败及异常报价不参与排名</span><a id="download" class="text-link" href="/api/export.csv?currency=USD&amp;hours=24">下载当前币种 CSV <span aria-hidden="true">↓</span></a></div>
+    </article>
+    <aside class="insight-stack"><article class="savings-card"><div class="eyebrow">A LITTLE DIFFERENCE ADDS UP</div><h2>这次购汇，可以少花</h2><div class="savings-number"><span>¥</span> <strong id="savings">—</strong></div><p id="savings-detail">填写金额，比较有效样本的最高与最低报价。</p><div class="savings-divider"></div><div class="mini-stat"><span>有效样本价差 / 单位</span><b id="spread">—</b></div><div class="mini-stat"><span>监测日内最低 / 单位</span><b id="day-low">—</b></div><small>按公开牌价估算，不含客户专属优惠。<br>只有两家及以上有效银行时才计算。</small></article>
+      <article class="explain-card"><span class="info-icon">i</span><div><h3>买外币，看“现汇卖出价”</h3><p>这是银行向你卖出外币的价格，数字越低，购汇成本越少。<span id="unit-note">所有报价均已换算为每 1 单位外币。</span></p></div></article></aside>
+  </section>
+  <section class="panel chart-panel" id="history"><div class="panel-heading"><div><div class="eyebrow">RATE HISTORY</div><h2>报价走势 <span class="chart-unit" id="chart-unit">USD / 人民币</span></h2></div><div class="range-buttons" aria-label="走势时段"><button data-hours="6" aria-pressed="false">6 小时</button><button data-hours="24" class="selected" aria-pressed="true">24 小时</button><button data-hours="168" aria-pressed="false">7 天</button></div></div><div id="legend" class="legend" aria-label="切换银行曲线"></div><div class="chart-container" id="chart" aria-live="polite"><div class="chart-empty">正在读取历史记录…</div></div><div class="chart-footer"><span id="history-note">按实际采集时间展示 · 中断处不连线 · 悬停查看报价</span><span>单位：人民币 / 1 外币</span></div></section>
+  <footer><span class="footer-brand">汇率观察 <span>FX WATCH</span></span><p>公开牌价仅供参考，以银行成交确认页为准。各行发布时间可能不同；“最低”仅指当前有效的监控样本。</p><span id="last-render">等待更新</span></footer>
+</main>
+</body></html>

@@ -1,0 +1,23 @@
+# Docker paths are inside the persistent fxwatch-data volume.
+banks = ["cgb", "hxb", "boc", "icbc", "cmb", "citic"]
+interval_seconds = 300
+database = "/data/fxwatch.sqlite3"
+raw_directory = "/data/raw"
+retention_days = 180
+timeout_seconds = 20
+
+max_quote_age_seconds = 900
+max_fetch_age_seconds = 660
+future_tolerance_seconds = 120
+min_comparison_banks = 2
+max_median_deviation = "0.10"
+daily_low_alert = true
+new_low_cooldown_seconds = 1800
+icbc_legacy_tls = true
+
+[targets]
+# Unit: CNY per 1 unit of foreign currency. Uncomment/edit if required.
+# USD = "6.65"
+# EUR = "7.35"
+# HKD = "0.85"
+# JPY = "0.041"

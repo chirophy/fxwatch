@@ -1,0 +1,43 @@
+{
+  "totalCount": 0,
+  "pageCount": 0,
+  "retCode": "AAAAAAA",
+  "retMsg": "查询成功",
+  "optFlag": null,
+  "content": {
+    "resultList": [
+      {
+        "quotePriceDate": "2026年11月16日",
+        "quotePriceTime": "09:38:50",
+        "curName": "美元",
+        "curCode": "014001",
+        "cstexcBuyPrice": "666.00",
+        "cstexcSellPrice": "668.95"
+      },
+      {
+        "quotePriceDate": "2026年11月16日",
+        "quotePriceTime": "09:38:50",
+        "curName": "欧元",
+        "curCode": "051001",
+        "cstexcBuyPrice": "732.93",
+        "cstexcSellPrice": "737.82"
+      },
+      {
+        "quotePriceDate": "2026年11月16日",
+        "quotePriceTime": "09:38:50",
+        "curName": "日元",
+        "curCode": "027001",
+        "cstexcBuyPrice": "4.1555",
+        "cstexcSellPrice": "4.1975"
+      },
+      {
+        "quotePriceDate": "2026年11月16日",
+        "quotePriceTime": "09:38:50",
+        "curName": "港币",
+        "curCode": "013001",
+        "cstexcBuyPrice": "84.875",
+        "cstexcSellPrice": "85.217"
+      }
+    ]
+  }
+}

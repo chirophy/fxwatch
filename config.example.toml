@@ -1,0 +1,28 @@
+# Python 3.11+。金额统一为人民币 / 1 单位外币。
+banks = ["cgb", "hxb", "boc", "icbc", "cmb", "citic"]
+interval_seconds = 300
+database = "data/fxwatch.sqlite3"
+raw_directory = "data/raw"
+retention_days = 180
+timeout_seconds = 20
+
+# 过期或本轮失败的银行不会参加排名。周末也不放宽过期限制。
+max_quote_age_seconds = 900
+max_fetch_age_seconds = 660
+future_tolerance_seconds = 120
+min_comparison_banks = 2
+max_median_deviation = "0.10"
+
+daily_low_alert = true
+new_low_cooldown_seconds = 1800
+
+# 工行接口需要旧式 TLS 握手兼容，仅作用于工行请求；仍验证证书和域名。
+# 设为 false 可使用严格默认握手；不兼容时工行显示采集失败。
+icbc_legacy_tls = true
+
+[targets]
+# 未设置目标价则不启用到价通知。以下仅为格式示例，按需取消注释。
+# USD = "6.65"
+# EUR = "7.35"
+# HKD = "0.85"
+# JPY = "0.041" # 每 1 日元；对应每 100 日元 4.10 元

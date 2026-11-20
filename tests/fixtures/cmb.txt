@@ -1,0 +1,54 @@
+{
+  "returnCode": "SUC0000",
+  "errorMsg": null,
+  "body": [
+    {
+      "ccyNbr": "港币",
+      "ccyNbrEng": "港币 HKD",
+      "rtbBid": "85.056",
+      "rthOfr": "85.226",
+      "rtcOfr": "85.226",
+      "rthBid": "84.886",
+      "rtcBid": "84.886",
+      "ratTim": "09:41:28",
+      "ratDat": "2026年11月16日",
+      "ccyExc": "10"
+    },
+    {
+      "ccyNbr": "美元",
+      "ccyNbrEng": "美元 USD",
+      "rtbBid": "667.290",
+      "rthOfr": "668.958",
+      "rtcOfr": "668.958",
+      "rthBid": "666.056",
+      "rtcBid": "666.056",
+      "ratTim": "09:41:28",
+      "ratDat": "2026年11月16日",
+      "ccyExc": "10"
+    },
+    {
+      "ccyNbr": "欧元",
+      "ccyNbrEng": "欧元 EUR",
+      "rtbBid": "735.354",
+      "rthOfr": "738.295",
+      "rtcOfr": "738.295",
+      "rthBid": "732.413",
+      "rtcBid": "732.413",
+      "ratTim": "09:41:28",
+      "ratDat": "2026年11月16日",
+      "ccyExc": "10"
+    },
+    {
+      "ccyNbr": "日元",
+      "ccyNbrEng": "日元 JPY",
+      "rtbBid": "4.17709",
+      "rthOfr": "4.19380",
+      "rtcOfr": "4.19380",
+      "rthBid": "4.16038",
+      "rtcBid": "4.16038",
+      "ratTim": "09:41:28",
+      "ratDat": "2026年11月16日",
+      "ccyExc": "10"
+    }
+  ]
+}

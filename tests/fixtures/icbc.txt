@@ -1,0 +1,54 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": [
+    {
+      "currencyType": "013",
+      "currencyCHName": "港币",
+      "currencyENName": "HKD",
+      "reference": "85.05",
+      "foreignBuy": "84.82",
+      "foreignSell": "85.25",
+      "cashBuy": "84.82",
+      "cashSell": "85.25",
+      "publishDate": "2026-11-16",
+      "publishTime": "09:40:59"
+    },
+    {
+      "currencyType": "014",
+      "currencyCHName": "美元",
+      "currencyENName": "USD",
+      "reference": "667.23",
+      "foreignBuy": "665.36",
+      "foreignSell": "668.83",
+      "cashBuy": "665.36",
+      "cashSell": "668.83",
+      "publishDate": "2026-11-16",
+      "publishTime": "09:40:59"
+    },
+    {
+      "currencyType": "027",
+      "currencyCHName": "日元",
+      "currencyENName": "JPY",
+      "reference": "4.1757",
+      "foreignBuy": "4.1548",
+      "foreignSell": "4.1932",
+      "cashBuy": "4.1548",
+      "cashSell": "4.1932",
+      "publishDate": "2026-11-16",
+      "publishTime": "09:40:59"
+    },
+    {
+      "currencyType": "038",
+      "currencyCHName": "欧元",
+      "currencyENName": "EUR",
+      "reference": "735.25",
+      "foreignBuy": "731.57",
+      "foreignSell": "738.34",
+      "cashBuy": "731.57",
+      "cashSell": "738.34",
+      "publishDate": "2026-11-16",
+      "publishTime": "09:40:59"
+    }
+  ]
+}
